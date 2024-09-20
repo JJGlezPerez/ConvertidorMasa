@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:layout_row="0"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:text="1" />
+
+        <RadioGroup
+            android:id="@+id/from_group_RB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="30dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1">
+            <RadioButton
+                android:id="@+id/from_mg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Miligramo" />
+            <RadioButton
+                android:id="@+id/from_g"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Gramo" />
+            <RadioButton
+                android:id="@+id/from_kg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Kilogramo" />
+            <RadioButton
+                android:id="@+id/from_lb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Libra" />
+            <RadioButton
+                android:id="@+id/from_oz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Onza" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/to_group_RB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="30dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnSpan="1">
+            <RadioButton
+                android:id="@+id/to_mg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Miligramo" />
+            <RadioButton
+                android:id="@+id/to_g"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Gramo" />
+            <RadioButton
+                android:id="@+id/to_kg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Kilogramo" />
+            <RadioButton
+                android:id="@+id/to_lb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Libra" />
+            <RadioButton
+                android:id="@+id/to_oz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="8pt"
+                android:text="Onza" />
+
+        </RadioGroup>
+
+        <!-- Botón que ocupa las dos columnas -->
+        <Button
+            android:id="@+id/convert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="Convertir"
+            android:layout_margin="30dp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            android:text="Convertido"/>
+
+    </GridLayout>
+
+</LinearLayout>
